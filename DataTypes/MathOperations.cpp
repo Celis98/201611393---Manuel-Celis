@@ -3,19 +3,29 @@
 using namespace std;
 
 int main() {
-    string userName;
-    int userValue1;
+    int inputValue1, inputValue2;
+    int sumResult, subResult, multiplyResult, divisionResult, moduleResult;
 
-    // Entrada por teclado
-    cout << "Ingrese un numero: ";
-    cin >> userValue1;
+    cout << "Bienvenido" << endl;
+    cout << "Ingrese el primer valor: ";
+    cin >> inputValue1;
+    cout << "Ingrese el segundo valor: ";
+    cin >> inputValue2;
 
-    cout << "Ingrese su nombre: ";
-    cin >> userName;
+    sumResult = inputValue1 + inputValue2;
+    cout << "El resultado de la suma es: " << sumResult << endl;
 
-    // Salida por consola
-    cout << "Bienvenido: " << userName << endl;
-    cout << "Usted ingreso el valor: " << userValue1 << endl;
+    subResult = inputValue1 - inputValue2;
+    cout << "El resultado de la resta es: " << subResult << endl;
+
+    multiplyResult = inputValue1 * inputValue2;
+    cout << "El resultado de la multiplicacion es: " << multiplyResult << endl;
+
+    divisionResult = inputValue1 / inputValue2;
+    cout << "El resultado de la division es: " << divisionResult << endl;
+
+    moduleResult = inputValue1 % inputValue2;
+    cout << "El resultado del modulo es: " << moduleResult << endl;
 
     return 0;
 }
