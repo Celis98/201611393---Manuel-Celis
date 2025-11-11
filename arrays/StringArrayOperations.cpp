@@ -73,6 +73,7 @@ void run() {
             break;
         // Salir    
         case 0:
+            delete[] titles;
             continueRunning = false;
             break;
         default:
